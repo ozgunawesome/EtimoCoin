@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en"><title>Etimo Challenge</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" href="../../css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script th:src="@{/js/script.js}" href="../../js/script.js"></script>
+</head>
+<body style="align: center;">
+<div class="divTable">
+    <div class="divTableBody">
+        <th:block th:each="y : ${#numbers.sequence(0, 49)}">
+            <div class="divTableRow">
+                <div th:each="x : ${#numbers.sequence(0, 49)}" class="divTableCell fixbg"
+                     th:id="${x} + '_' + ${y}">
+                </div>
+            </div>
+        </th:block>
+    </div>
+</div>
+<div class="toTheRight">
+    <img th:src="@{/images/etimo.png}" width="100%"/>
+    <div><span style="font-size: x-large">Welcome </span><span style="font-size: medium">to another GUI gone wrong!!!</span></div>
+    <div class="score">
+        <div style="color: red; display: inline-block;">RED team</div>
+        <div>
+            <span id="redcoins1" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                 src="../../images/coin.gif"/></span>
+            <span id="redcoins2" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                 src="../../images/coin.gif"/></span>
+            <span id="redcoins3" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                 src="../../images/coin.gif"/></span>
+            <span id="redcoins4" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                 src="../../images/coin.gif"/></span>
+            <span id="redcoins5" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                 src="../../images/coin.gif"/></span>
+        </div>
+    </div>
+    <div class="score1">Score: <span id="redscore">x</span></div>
+
+    <div class="score">
+        <div style="color: blue; display: inline-block;">BLUE team</div>
+        <div>
+            <span id="bluecoins1" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                  src="../../images/coin.gif"/></span>
+            <span id="bluecoins2" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                  src="../../images/coin.gif"/></span>
+            <span id="bluecoins3" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                  src="../../images/coin.gif"/></span>
+            <span id="bluecoins4" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                  src="../../images/coin.gif"/></span>
+            <span id="bluecoins5" class="coin-display fixbg"><img th:src="@{/images/coin.gif}"
+                                                                  src="../../images/coin.gif"/></span>
+        </div>
+    </div>
+
+    <div class="score1">Score: <span id="bluescore">x</span></div>
+
+</div>
+</body>
+</html>

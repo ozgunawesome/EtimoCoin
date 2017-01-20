@@ -1,0 +1,54 @@
+.divTable{
+    alignment: center;
+    display: inline-table;
+    width: 801px;
+    margin-left: 100px;
+    border: 1px solid midnightblue;
+}
+.divTableRow {
+    max-height: 16px;
+    height: 16px;
+    width: 800px;
+    max-width: 800px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.divTableCell, .divTableHead {
+    max-height: 16px;
+    height: 16px;
+    width: 16px;
+    max-width: 16px;
+    border: 1px dotted #f1f1f1;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    background-size: contain;
+}
+.score {
+    margin: 20px;
+}
+.score1 {
+    margin-bottom: 30px;
+}
+.fixbg {
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+.coin-display {
+    display: inline;
+}
+.toTheRight {
+    float: right;
+    display: block;
+    font-family: Verdana, serif;
+    font-size: x-large;
+    width: 250px;
+}
+.divTableBody {
+    display: table-row-group;
+}

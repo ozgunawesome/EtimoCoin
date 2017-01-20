@@ -32,8 +32,7 @@
     margin-bottom: 30px;
 }
 .fixbg {
-    background-repeat: no-repeat;
-    background-position: center;
+    background: no-repeat center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;

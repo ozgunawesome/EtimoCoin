@@ -9,7 +9,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 /**
  * Created by ozgunayaz on 1/19/17.
+ * license: https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
+
 @SpringBootApplication
 public class Application {
 

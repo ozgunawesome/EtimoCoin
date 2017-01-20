@@ -4,7 +4,9 @@ import java.util.*;
 
 /**
  * Created by ozgunayaz on 1/19/17.
+ * license: https://creativecommons.org/licenses/by-nc-sa/4.0/
  */
+
 public class GameGrid {
 
     private static GameGrid SINGLETON = null;
@@ -92,10 +94,8 @@ public class GameGrid {
     }
 
     boolean commandMove(MoveCommandWrapper wrapper) {
-        if (playerMap.containsKey(wrapper.getPlayerKey())) {
-            return move(playerMap.get(wrapper.getPlayerKey()), wrapper.getDirection());
-        }
-        return false;
+        return playerMap.containsKey(wrapper.getPlayerKey()) &&
+                move(playerMap.get(wrapper.getPlayerKey()), wrapper.getDirection());
     }
 
     private boolean move(Player player, Direction direction) {
